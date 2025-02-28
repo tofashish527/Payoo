@@ -49,9 +49,9 @@
                      <img src="assets/money1.png" class="w-7 mx-auto" alt="">
                      <p>Pay Bill</p>
                     </div>
-                    <div class="box border p-4 text-center rounded-sm">
+                    <div id="trans-box" class="box border p-4 text-center rounded-sm">
                      <img src="assets/money1.png" class="w-7 mx-auto" alt="">
-                     <p>Transactions</p>
+                     <p>Transaction</p>
                     </div>
                  </div>
 
@@ -63,7 +63,7 @@
                           <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
                             <div class="card-body">
                             <legend>Select Options</legend>
-                            <select class="select">
+                            <select id="allBank" class="select">
                                 <option disabled selected>Select Bank</option>
                                 <option value="Bkash">Bkash</option>
                                 <option value="Rocket">Rocket</option>
@@ -110,6 +110,15 @@
                       </div>
                  </section>
 
+
+                 <!-- transaction -->
+                <section id="trans-hist">
+                <h1 class="text-3xl font-bold text-blue-950 text-center p-3">Transaction History</h1>
+                <div id="trans-container">
+
+                </div>
+                </section>
+
             </section>
         </header>
     </section>
@@ -117,6 +126,7 @@
     <script src="toggle.js"></script>
     <script src="cashout.js"></script>
     <script src="utility.js"></script>
+    <script src="transaction.js"></script>
     <!-- <script src="recap.js"></script> -->
 </body>
 </html>
